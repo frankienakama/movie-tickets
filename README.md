@@ -3,13 +3,18 @@
 * user can input age
 
 * the program will show movie price per adult ticket time and kind
-new movie adult matinee = 5
-new movie adult regular = 10
-old movie adult matinee = 3
-old movie adult regular = 6
+
+
 
 * the program will show movie price per other ticket time and kind
-new movie for child/old matinee = 4
-new movie for child/old regular = 8
-old movie for child/old matinee = 2
-old movie for child/old regular = 4
+
+old movie matinee other age = 2
+old movie regular other age = 4
+old movie matinee adult = 3
+old movie regular adult = 6
+
+
+new movie matinee  other age= 4
+new movie regular  other age= 8
+new movie matinee adult = 5
+new movie regular adult = 10
