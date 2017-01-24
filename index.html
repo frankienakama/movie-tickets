@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Ticket</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Ticket</h1>
+      <form id="ticket-price">
+<!-- movie -->
+        <div class="form-group" id="movie">
+          <label for="select-movie">Select a movie</label>
+          <select class="form-control" id="select-movie">
+            <option class=
+            "old-movie">Lord of the Rings: The Fellowship of the Ring</option>
+            <option class=
+            "old-movie">Lord of the Rings: The Two Towers</option>
+            <option id="new-movie">Lord of the Rings: Return of the King</option>
+          </select>
+        </div>
+<!-- time -->
+        <div class="form-group" id="time">
+          <label for="select-time">Select a time</label>
+          <select class="form-control" id="select-time">
+            <option class = "matinee">10am</option>
+            <option class = "matinee">2pm</option>
+            <option class="evening">7pm</option>
+            <option class="evening">10pm</option>
+          </select>
+        </div>
+<!-- age -->
+          <div id="age">
+            <div class="radio">
+              <label><input type="radio" id="adult">Adult</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" class="other-age">Child (1-10)</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" class="other-age">Senior (55+)</label>
+            </div>
+          </div>
+          <button type="submit" class="button btn-default">Submit</button>
+        </form>
+        <div class="results">
+          <span class="ticket-results"></span>
+        </div>
+    </div>
+
+
+  </body>
+</html>
