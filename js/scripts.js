@@ -9,30 +9,30 @@ function Ticket(movie, time, age) {
 // old movies
 // old movie, matinee, other age
     if (this.movie === 1 && this.time === 1 && this.age === 1) {
-      return 2;
+      return "$2";
 // old movie, matinee, adult
     } else if (this.movie === 1 && this.time === 1 && this.age === 2) {
-      return 3;
+      return "$3";
 // old movie, night, other age
     } else if (this.movie === 1 && this.time === 2 && this.age === 1) {
-      return 4;
+      return "$4";
 // old movie, night, adult
     } else if (this.movie === 1 && this.time === 2 && this.age === 2) {
-      return 6;
+      return "$6";
 
 // new movies
 // new movie, matinee, other age
     } else if (this.movie === 2 && this.time === 1 && this.age === 1) {
-        return 4;
+        return "$4";
 // new movie, matinee, adult
     } else if (this.movie === 2 && this.time === 1 && this.age === 2) {
-      return 5;
+      return "$5";
 // new movie, night, other age
     } else if (this.movie === 2 && this.time === 2 && this.age === 1) {
-      return 8;
+      return "$8";
 // new movie, night, adult
     } else if (this.movie === 2 && this.time === 2 && this.age === 2) {
-      return 10;
+      return "$10";
 // any other combination
     } else {
       return "Missing input";
