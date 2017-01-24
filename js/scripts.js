@@ -1,11 +1,8 @@
 //back-end
-function Ticket(newMovie, oldMovie, matinee, evening, adult, otherAge) {
-  this.newMovie = newMovie;
-  this.oldMovie = oldMovie;
-  this.matinee = matinee;
-  this.evening = evening;
-  this.adult = adult;
-  this.otherAge = otherAge;
+function Ticket(movie, time, age) {
+  this.movie = movie;
+  this.time = time;
+  this.age = age;
 }
 
 
@@ -15,16 +12,13 @@ $(document).ready(function(){
   $("form#ticket-price").submit(function(event) {
     event.preventDefault();
 
-    var lotr12 = $("option.old-movie").val();
-    var lotr3 = $("option#new-movie").val();
+    var movieType = $("#select-movie option:selected").val();
 
-    var morning = $("option.matinee").val();
-    var night = $("option.evening").val();
+    var timeType = $("#select-time option:selected").val();;
 
-    var regular = $("input#adult").val();
-    var other = $("input.other-age").val();
+    var ageType = $("input:radio[name=age]:checked").val();
 
-    var ticketInfo = new Ticket(lotr3, lotr12, morning, night, regular, other);
+    var ticketInfo = new Ticket(movieType, timeType, ageType);
     $("span.ticket-results").val("");
     $("span.ticket-results").text(ticketInfo);
 
