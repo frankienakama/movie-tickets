@@ -19,8 +19,9 @@ $(document).ready(function(){
     var ageType = $("input:radio[name=age]:checked").val();
 
     var ticketInfo = new Ticket(movieType, timeType, ageType);
-    $("span.ticket-results").val("");
-    $("span.ticket-results").text(ticketInfo);
+
+
+    $("span.ticket-results").text(ticketInfo.movie + ticketInfo.time + ticketInfo.age);
 
 
   });
